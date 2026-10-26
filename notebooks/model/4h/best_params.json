@@ -1,0 +1,18 @@
+{
+ "params": {
+  "n_estimators": 450,
+  "learning_rate": 0.05418947327527597,
+  "max_depth": 2,
+  "num_leaves": 4,
+  "min_child_samples": 84,
+  "subsample": 0.9774980005198117,
+  "colsample_bytree": 0.6829204002768068,
+  "reg_lambda": 13.791908487954673
+ },
+ "edge_long": 0.04606636498749432,
+ "edge_short": 0.33905223676227064,
+ "tf": "4h",
+ "horizon": 6,
+ "tp_atr": 2.0,
+ "sl_atr": 1.0
+}

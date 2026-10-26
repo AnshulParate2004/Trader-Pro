@@ -1,0 +1,18 @@
+{
+ "params": {
+  "n_estimators": 200,
+  "learning_rate": 0.03,
+  "max_depth": 3,
+  "num_leaves": 8,
+  "min_child_samples": 100,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8,
+  "reg_lambda": 5.0
+ },
+ "edge_long": 0.08,
+ "edge_short": 0.08,
+ "tf": "1h",
+ "horizon": 24,
+ "tp_atr": 2.0,
+ "sl_atr": 1.0
+}

@@ -1,0 +1,129 @@
+{
+ "symbol": "BTCUSDT",
+ "tf": "1d",
+ "saved_utc": "20261026_1613",
+ "trained_until": "2026-10-19 00:00:00+00:00",
+ "horizon_bars": 6,
+ "tp_atr": 2.0,
+ "sl_atr": 1.0,
+ "n_features": 34,
+ "features": [
+  "ret_1",
+  "ret_6",
+  "ret_24",
+  "atr_pct",
+  "atr_ratio",
+  "body_pct",
+  "upper_wick",
+  "lower_wick",
+  "rsi14",
+  "macd_hist",
+  "bb_pctb",
+  "ema_dist_50",
+  "ema_20_50",
+  "vol_z",
+  "taker_ratio",
+  "vol_ratio",
+  "dow_sin",
+  "dow_cos",
+  "dsup_atr",
+  "dres_atr",
+  "sup_age",
+  "res_age",
+  "sup_touch",
+  "res_touch",
+  "n_sup",
+  "n_res",
+  "ev_sup",
+  "ev_res",
+  "dsup_1w",
+  "dres_1w",
+  "trend_1w",
+  "conf_sup",
+  "conf_res",
+  "htf_score"
+ ],
+ "dropped_features": [
+  "ret_3",
+  "ret_12",
+  "range_pct",
+  "bb_width",
+  "ema_dist_20",
+  "ema20_slope",
+  "dsup_own",
+  "dres_own"
+ ],
+ "lgb_params": {
+  "n_estimators": 200,
+  "learning_rate": 0.03,
+  "max_depth": 3,
+  "num_leaves": 8,
+  "min_child_samples": 50,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8,
+  "reg_lambda": 5.0
+ },
+ "edge_long": 0.08,
+ "edge_short": 0.08,
+ "thr_long": 0.24142,
+ "thr_short": 0.24689,
+ "mean_auc_long": 0.48645,
+ "mean_auc_short": 0.53177,
+ "verdict": [
+  {
+   "check": "Mean AUC (long & short) > 0.52",
+   "passed": false
+  },
+  {
+   "check": "OOS Sharpe > Buy & Hold Sharpe",
+   "passed": false
+  },
+  {
+   "check": "OOS Sharpe beats 95% of random-entry runs",
+   "passed": false
+  },
+  {
+   "check": "Mean R/trade > 0 (bootstrap p < 0.05)",
+   "passed": false
+  },
+  {
+   "check": "ML beats LogReg baseline (OOS Sharpe)",
+   "passed": false
+  },
+  {
+   "check": "Sealed hold-out Sharpe > 0",
+   "passed": false
+  },
+  {
+   "check": "At least 25 OOS trades",
+   "passed": false
+  }
+ ],
+ "latest_signal": {
+  "signal": "FLAT",
+  "p_long": 0.07953,
+  "p_short": 0.16435,
+  "bar": "2026-10-25 00:00:00+00:00"
+ },
+ "expected_move": {
+  "unit": "ATR",
+  "up": 1.10798,
+  "down": 1.32847,
+  "net": -0.2168,
+  "typical": {
+   "mfe_up": 1.35215,
+   "mfe_dn": 1.32236,
+   "net": 0.10571
+  },
+  "oos_spearman": {
+   "mfe_up": 0.01586,
+   "mfe_dn": 0.00457,
+   "net": -0.01005
+  },
+  "oos_r2_vs_mean": {
+   "mfe_up": -0.19029,
+   "mfe_dn": -0.23059,
+   "net": -0.24821
+  }
+ }
+}

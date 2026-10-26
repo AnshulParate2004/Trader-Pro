@@ -1,0 +1,23 @@
+[project]
+name = "trader-pro"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "catboost>=1.2.10",
+    "ccxt>=4.5.90",
+    "ipykernel>=7.4.0",
+    "joblib>=1.6.0",
+    "jupyterlab>=4.6.4",
+    "lightgbm>=4.7.0",
+    "matplotlib>=3.11.2",
+    "notebook>=7.6.3",
+    "numpy>=2.5.4",
+    "optuna>=5.0.0",
+    "pandas>=3.1.0",
+    "pyarrow>=26.0.0",
+    "python-dateutil>=3.0.0",
+    "requests>=2.34.2",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.18.1",
+    "tqdm>=4.70.1",
+]

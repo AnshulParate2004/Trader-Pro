@@ -1,0 +1,136 @@
+{
+ "symbol": "BTCUSDT",
+ "tf": "1h",
+ "saved_utc": "20261026_1603",
+ "trained_until": "2026-10-24 23:00:00+00:00",
+ "horizon_bars": 24,
+ "tp_atr": 2.0,
+ "sl_atr": 1.0,
+ "n_features": 50,
+ "features": [
+  "ret_1",
+  "ret_3",
+  "ret_6",
+  "ret_12",
+  "ret_24",
+  "atr_pct",
+  "atr_ratio",
+  "range_pct",
+  "body_pct",
+  "upper_wick",
+  "lower_wick",
+  "rsi14",
+  "macd_hist",
+  "bb_pctb",
+  "bb_width",
+  "ema_dist_20",
+  "ema_dist_50",
+  "ema_20_50",
+  "ema20_slope",
+  "vol_z",
+  "taker_ratio",
+  "vol_ratio",
+  "hour_sin",
+  "hour_cos",
+  "dow_sin",
+  "dow_cos",
+  "dsup_own",
+  "dres_own",
+  "dsup_atr",
+  "dres_atr",
+  "sup_age",
+  "res_age",
+  "sup_touch",
+  "res_touch",
+  "n_sup",
+  "n_res",
+  "ev_sup",
+  "ev_res",
+  "dsup_4h",
+  "dres_4h",
+  "trend_4h",
+  "dsup_1d",
+  "dres_1d",
+  "trend_1d",
+  "dsup_1w",
+  "dres_1w",
+  "trend_1w",
+  "conf_sup",
+  "conf_res",
+  "htf_score"
+ ],
+ "dropped_features": [],
+ "lgb_params": {
+  "n_estimators": 200,
+  "learning_rate": 0.03,
+  "max_depth": 3,
+  "num_leaves": 8,
+  "min_child_samples": 100,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8,
+  "reg_lambda": 5.0
+ },
+ "edge_long": 0.08,
+ "edge_short": 0.08,
+ "thr_long": 0.38563,
+ "thr_short": 0.38866,
+ "mean_auc_long": 0.52682,
+ "mean_auc_short": 0.52644,
+ "verdict": [
+  {
+   "check": "Mean AUC (long & short) > 0.52",
+   "passed": true
+  },
+  {
+   "check": "OOS Sharpe > Buy & Hold Sharpe",
+   "passed": false
+  },
+  {
+   "check": "OOS Sharpe beats 95% of random-entry runs",
+   "passed": false
+  },
+  {
+   "check": "Mean R/trade > 0 (bootstrap p < 0.05)",
+   "passed": false
+  },
+  {
+   "check": "ML beats LogReg baseline (OOS Sharpe)",
+   "passed": false
+  },
+  {
+   "check": "Sealed hold-out Sharpe > 0",
+   "passed": true
+  },
+  {
+   "check": "At least 60 OOS trades",
+   "passed": false
+  }
+ ],
+ "latest_signal": {
+  "signal": "FLAT",
+  "p_long": 0.27297,
+  "p_short": 0.46774,
+  "bar": "2026-10-25 23:00:00+00:00"
+ },
+ "expected_move": {
+  "unit": "ATR",
+  "up": 3.28562,
+  "down": 3.37099,
+  "net": 0.5523,
+  "typical": {
+   "mfe_up": 2.6492,
+   "mfe_dn": 2.70421,
+   "net": 0.04629
+  },
+  "oos_spearman": {
+   "mfe_up": 0.20353,
+   "mfe_dn": 0.19788,
+   "net": 0.02003
+  },
+  "oos_r2_vs_mean": {
+   "mfe_up": 0.0275,
+   "mfe_dn": 0.03363,
+   "net": -0.06377
+  }
+ }
+}
