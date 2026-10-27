@@ -1,8 +1,8 @@
 {
  "symbol": "BTCUSDT",
  "tf": "15m",
- "saved_utc": "20261026_1625",
- "trained_until": "2026-10-25 17:45:00+00:00",
+ "saved_utc": "20261027_0757",
+ "trained_until": "2026-10-26 21:45:00+00:00",
  "horizon_bars": 24,
  "tp_atr": 2.0,
  "sl_atr": 1.0,
@@ -75,14 +75,14 @@
  },
  "edge_long": 0.08,
  "edge_short": 0.08,
- "thr_long": 0.38445,
- "thr_short": 0.3911,
- "mean_auc_long": 0.52975,
- "mean_auc_short": 0.51874,
+ "thr_long": 0.6315,
+ "thr_short": 0.64047,
+ "mean_auc_long": 0.51424,
+ "mean_auc_short": 0.51762,
  "verdict": [
   {
    "check": "Mean AUC (long & short) > 0.52",
-   "passed": true
+   "passed": false
   },
   {
    "check": "OOS Sharpe > Buy & Hold Sharpe",
@@ -90,7 +90,7 @@
   },
   {
    "check": "OOS Sharpe beats 95% of random-entry runs",
-   "passed": false
+   "passed": true
   },
   {
    "check": "Mean R/trade > 0 (bootstrap p < 0.05)",
@@ -111,29 +111,9 @@
  ],
  "latest_signal": {
   "signal": "FLAT",
-  "p_long": 0.30588,
-  "p_short": 0.39873,
-  "bar": "2026-10-25 23:45:00+00:00"
+  "p_long": 0.51829,
+  "p_short": 0.59301,
+  "bar": "2026-10-27 03:45:00+00:00"
  },
- "expected_move": {
-  "unit": "ATR",
-  "up": 2.84219,
-  "down": 2.94862,
-  "net": 0.279,
-  "typical": {
-   "mfe_up": 2.64489,
-   "mfe_dn": 2.70777,
-   "net": 0.03998
-  },
-  "oos_spearman": {
-   "mfe_up": 0.23514,
-   "mfe_dn": 0.23968,
-   "net": 0.00693
-  },
-  "oos_r2_vs_mean": {
-   "mfe_up": 0.06055,
-   "mfe_dn": 0.0698,
-   "net": -0.03637
-  }
- }
+ "expected_move": null
 }
