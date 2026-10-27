@@ -1,8 +1,8 @@
 {
  "symbol": "BTCUSDT",
  "tf": "1h",
- "saved_utc": "20261026_1603",
- "trained_until": "2026-10-24 23:00:00+00:00",
+ "saved_utc": "20261027_0729",
+ "trained_until": "2026-10-26 03:00:00+00:00",
  "horizon_bars": 24,
  "tp_atr": 2.0,
  "sl_atr": 1.0,
@@ -72,14 +72,14 @@
  },
  "edge_long": 0.08,
  "edge_short": 0.08,
- "thr_long": 0.38563,
- "thr_short": 0.38866,
- "mean_auc_long": 0.52682,
- "mean_auc_short": 0.52644,
+ "thr_long": 0.63162,
+ "thr_short": 0.63242,
+ "mean_auc_long": 0.51152,
+ "mean_auc_short": 0.51009,
  "verdict": [
   {
    "check": "Mean AUC (long & short) > 0.52",
-   "passed": true
+   "passed": false
   },
   {
    "check": "OOS Sharpe > Buy & Hold Sharpe",
@@ -95,11 +95,11 @@
   },
   {
    "check": "ML beats LogReg baseline (OOS Sharpe)",
-   "passed": false
+   "passed": true
   },
   {
    "check": "Sealed hold-out Sharpe > 0",
-   "passed": true
+   "passed": false
   },
   {
    "check": "At least 60 OOS trades",
@@ -108,29 +108,29 @@
  ],
  "latest_signal": {
   "signal": "FLAT",
-  "p_long": 0.27297,
-  "p_short": 0.46774,
-  "bar": "2026-10-25 23:00:00+00:00"
+  "p_long": 0.4383,
+  "p_short": 0.57821,
+  "bar": "2026-10-27 03:00:00+00:00"
  },
  "expected_move": {
   "unit": "ATR",
-  "up": 3.28562,
-  "down": 3.37099,
-  "net": 0.5523,
+  "up": 2.96837,
+  "down": 2.75508,
+  "net": 0.38633,
   "typical": {
-   "mfe_up": 2.6492,
-   "mfe_dn": 2.70421,
-   "net": 0.04629
+   "mfe_up": 2.63485,
+   "mfe_dn": 2.67282,
+   "net": 0.04405
   },
   "oos_spearman": {
-   "mfe_up": 0.20353,
-   "mfe_dn": 0.19788,
-   "net": 0.02003
+   "mfe_up": 0.19611,
+   "mfe_dn": 0.19632,
+   "net": 0.01028
   },
   "oos_r2_vs_mean": {
-   "mfe_up": 0.0275,
-   "mfe_dn": 0.03363,
-   "net": -0.06377
+   "mfe_up": 0.00883,
+   "mfe_dn": 0.02933,
+   "net": -0.07236
   }
  }
 }

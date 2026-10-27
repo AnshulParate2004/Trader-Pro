@@ -1,8 +1,8 @@
 {
  "symbol": "BTCUSDT",
  "tf": "1w",
- "saved_utc": "20261026_1542",
- "trained_until": "2026-08-31 00:00:00+00:00",
+ "saved_utc": "20261027_0725",
+ "trained_until": "2026-09-28 00:00:00+00:00",
  "horizon_bars": 4,
  "tp_atr": 2.0,
  "sl_atr": 1.0,
@@ -59,10 +59,10 @@
  },
  "edge_long": 0.08,
  "edge_short": 0.08,
- "thr_long": 0.27745,
- "thr_short": 0.20739,
- "mean_auc_long": 0.40222,
- "mean_auc_short": 0.65879,
+ "thr_long": 0.7042,
+ "thr_short": 0.58318,
+ "mean_auc_long": 0.58924,
+ "mean_auc_short": 0.50242,
  "verdict": [
   {
    "check": "Mean AUC (long & short) > 0.52",
@@ -86,7 +86,7 @@
   },
   {
    "check": "Sealed hold-out Sharpe > 0",
-   "passed": false
+   "passed": true
   },
   {
    "check": "At least 10 OOS trades",
@@ -95,29 +95,29 @@
  ],
  "latest_signal": {
   "signal": "FLAT",
-  "p_long": 0.28933,
-  "p_short": 0.04731,
-  "bar": "2026-09-28 00:00:00+00:00"
+  "p_long": 0.61606,
+  "p_short": 0.44938,
+  "bar": "2026-10-26 00:00:00+00:00"
  },
  "expected_move": {
   "unit": "ATR",
-  "up": 2.12213,
-  "down": 0.61737,
-  "net": 0.8712,
+  "up": 1.76808,
+  "down": 1.03431,
+  "net": 0.28686,
   "typical": {
-   "mfe_up": 1.40189,
-   "mfe_dn": 0.96954,
-   "net": 0.47255
+   "mfe_up": 1.36873,
+   "mfe_dn": 0.98851,
+   "net": 0.39624
   },
   "oos_spearman": {
-   "mfe_up": -0.0253,
-   "mfe_dn": 0.14068,
-   "net": -0.0584
+   "mfe_up": -0.05189,
+   "mfe_dn": 0.21638,
+   "net": -0.08784
   },
   "oos_r2_vs_mean": {
-   "mfe_up": -0.70422,
-   "mfe_dn": -0.06973,
-   "net": -0.48041
+   "mfe_up": -0.67851,
+   "mfe_dn": -0.00196,
+   "net": -0.51363
   }
  }
 }
