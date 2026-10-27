@@ -1,7 +1,7 @@
 {
  "symbol": "BTCUSDT",
  "tf": "4h",
- "saved_utc": "20261027_0915",
+ "saved_utc": "20261027_0949",
  "trained_until": "2026-10-26 00:00:00+00:00",
  "horizon_bars": 6,
  "tp_atr": 3.0,

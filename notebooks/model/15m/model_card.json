@@ -1,7 +1,7 @@
 {
  "symbol": "BTCUSDT",
  "tf": "15m",
- "saved_utc": "20261027_0918",
+ "saved_utc": "20261027_0948",
  "trained_until": "2026-10-26 21:45:00+00:00",
  "horizon_bars": 24,
  "tp_atr": 2.0,
@@ -102,7 +102,7 @@
   },
   {
    "check": "Sealed hold-out Sharpe > 0",
-   "passed": false
+   "passed": true
   },
   {
    "check": "At least 100 OOS trades",
