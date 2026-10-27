@@ -1,7 +1,7 @@
 {
  "symbol": "BTCUSDT",
  "tf": "1d",
- "saved_utc": "20261027_0724",
+ "saved_utc": "20261027_0919",
  "trained_until": "2026-10-20 00:00:00+00:00",
  "horizon_bars": 6,
  "tp_atr": 2.0,
@@ -88,7 +88,7 @@
   },
   {
    "check": "ML beats LogReg baseline (OOS Sharpe)",
-   "passed": true
+   "passed": false
   },
   {
    "check": "Sealed hold-out Sharpe > 0",
@@ -96,7 +96,7 @@
   },
   {
    "check": "At least 25 OOS trades",
-   "passed": false
+   "passed": true
   }
  ],
  "latest_signal": {

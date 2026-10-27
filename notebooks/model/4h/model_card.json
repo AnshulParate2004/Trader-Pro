@@ -1,7 +1,7 @@
 {
  "symbol": "BTCUSDT",
  "tf": "4h",
- "saved_utc": "20261027_0643",
+ "saved_utc": "20261027_0915",
  "trained_until": "2026-10-26 00:00:00+00:00",
  "horizon_bars": 6,
  "tp_atr": 3.0,
@@ -80,19 +80,19 @@
   },
   {
    "check": "OOS Sharpe > Buy & Hold Sharpe",
-   "passed": false
+   "passed": true
   },
   {
    "check": "OOS Sharpe beats 95% of random-entry runs",
-   "passed": false
+   "passed": true
   },
   {
    "check": "Mean R/trade > 0 (bootstrap p < 0.05)",
-   "passed": false
+   "passed": true
   },
   {
    "check": "ML beats LogReg baseline (OOS Sharpe)",
-   "passed": true
+   "passed": false
   },
   {
    "check": "Sealed hold-out Sharpe > 0",
